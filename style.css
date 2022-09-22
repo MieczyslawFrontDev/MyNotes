@@ -115,11 +115,19 @@
 .note-panel #textarea {
   width: 100%;
   max-width: 90%;
-  max-height: 400px;
-  padding: 10px;
+  max-height: 300px;
   border-radius: 5px;
-  text-align: center;
   font-size: 16px;
+}
+
+.note-panel #category {
+  padding: 10px;
+  text-align: center;
+}
+
+.note-panel #textarea {
+  min-height: 100px;
+  min-width: 90%;
 }
 
 .note-panel__error {
