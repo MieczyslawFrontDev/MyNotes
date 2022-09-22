@@ -11,3 +11,17 @@ const error = document.querySelector("note-panel__error");
 
 let selectedValue;
 let cardID = 0;
+
+const openPanel = () => {
+  notePanel.style.display = "flex";
+};
+
+const closePanel = () => {
+  notePanel.style.display = "none";
+  category.selectedIndex = 0;
+  textarea.value = "";
+  error.style.display = "hidden";
+};
+
+addBtn.addEventListener("click", openPanel);
+cancelBtn.addEventListener("click", closePanel);
