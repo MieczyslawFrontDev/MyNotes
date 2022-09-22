@@ -71,7 +71,6 @@ const deleteNote = (id) => {
 
 const selectValue = () => {
   selectedValue = category.options[category.selectedIndex].text;
-  console.log(selectedValue);
 };
 
 const changeColor = (note) => {
