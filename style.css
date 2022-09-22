@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 120px;
+}
+
+.menu__buttons {
+  display: flex;
+}
+
+.menu button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.menu__add {
+  margin-right: 20px;
+}
+
+.icon {
+  margin-right: 5px;
+}
