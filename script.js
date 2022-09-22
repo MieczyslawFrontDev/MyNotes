@@ -23,5 +23,31 @@ const closePanel = () => {
   error.style.display = "hidden";
 };
 
+const createNote = () => {
+  const newNote = document.createElement("div");
+  newNote.classList.add("note-list__note");
+  newNote.setAttribute("id", cardID);
+
+  newNote.innerHTML = `<div class="note-list__note">
+  <div class="note-list__header">
+    <h3 class="note-list__title">Praca</h3>
+    <button class="note-list__delete-note">
+      <i class="fas fa-times icon"></i>
+    </button>
+  </div>
+  <div class="note-list__body">Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Vero mollitia nemo alias placeat, autem deleniti
+    quis nostrum sit quos facilis optio, quidem vel perferendis neque
+    obcaecati. Sint earum voluptatum libero!
+  </div>
+</div>`;
+
+  noteList.appendChild(newNote);
+  cardID++;
+  textarea.value = "";
+  category.selectedIndex = 0;
+  notePanel.style.display = "none";
+};
+
 addBtn.addEventListener("click", openPanel);
 cancelBtn.addEventListener("click", closePanel);
