@@ -65,6 +65,13 @@
   margin-bottom: 10px;
 }
 
+.note-list__delete-note {
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
 .note-panel {
   width: 600px;
   position: absolute;
