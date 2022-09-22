@@ -8,7 +8,6 @@ const notePanel = document.querySelector(".note-panel");
 const category = document.querySelector("#category");
 const textarea = document.querySelector("#textarea");
 const error = document.querySelector(".note-panel__error");
-console.log(error);
 
 let selectedValue;
 let cardID = 0;
@@ -32,14 +31,11 @@ const createNote = () => {
   newNote.innerHTML = `
   <div class="note-list__header">
     <h3 class="note-list__title">Praca</h3>
-    <button class="note-list__delete-note">
+    <button class="note-list__delete-note" onClick="deleteNote(${cardID})">
       <i class="fas fa-times icon"></i>
     </button>
   </div>
-  <div class="note-list__body">Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Vero mollitia nemo alias placeat, autem deleniti
-    quis nostrum sit quos facilis optio, quidem vel perferendis neque
-    obcaecati. Sint earum voluptatum libero!
+  <div class="note-list__body">${textarea.value}
   </div>
 `;
 
@@ -49,8 +45,6 @@ const createNote = () => {
   category.selectedIndex = 0;
   notePanel.style.display = "none";
 };
-
-console.log(category.options[category.selectedIndex].value);
 
 const addNote = () => {
   if (
@@ -64,6 +58,16 @@ const addNote = () => {
   }
 };
 
+const deleteAllNotes = () => {
+  noteList.textContent = "";
+};
+
+const deleteNote = (id) => {
+  const noteToDelete = document.getElementById(id);
+  noteToDelete.remove();
+};
+
 addBtn.addEventListener("click", openPanel);
 cancelBtn.addEventListener("click", closePanel);
 saveBtn.addEventListener("click", addNote);
+deleteAllBtn.addEventListener("click", deleteAllNotes);
