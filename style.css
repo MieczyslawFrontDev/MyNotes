@@ -65,6 +65,11 @@
   margin-bottom: 10px;
 }
 
+.note-list__body {
+  font-size: 18px;
+  word-break: break-word;
+}
+
 .note-list__delete-note {
   background: none;
   font-size: 20px;
