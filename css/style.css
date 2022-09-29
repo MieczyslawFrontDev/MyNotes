@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 120px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+  }
+  .menu h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+} ;

@@ -1,0 +1,90 @@
+.note-panel {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.note-panel h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.note-panel label {
+  margin: 10px;
+  font-size: 22px;
+}
+
+.note-panel #category,
+.note-panel #textarea {
+  width: 100%;
+  max-width: 90%;
+  max-height: 300px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.note-panel #category {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.note-panel #category option {
+  font-size: 14px;
+}
+
+.note-panel #textarea {
+  min-height: 100px;
+  min-width: 90%;
+}
+
+.note-panel__error {
+  margin: 10px;
+  font-size: 18px;
+  color: red;
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .note-panel {
+    width: 350px;
+    top: 60%;
+  }
+
+  .note-panel h2 {
+    font-size: 22px;
+  }
+
+  .note-panel label {
+    font-size: 16px;
+  }
+
+  .note-panel #category,
+  .note-panel #textarea {
+    font-size: 14px;
+  }
+
+  .note-panel #category option {
+    font-size: 12px;
+  }
+
+  .note-panel__error {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .note-panel {
+    width: 300px;
+    top: 60%;
+  }
+} ;

@@ -1,0 +1,69 @@
+.note-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.note-list__note {
+  margin: 10px 10px;
+  width: 20%;
+  background-color: rgb(255, 243, 0);
+  border: 1px solid black;
+}
+
+.note-list__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.06);
+  font-size: 18px;
+}
+
+.note-list__body {
+  font-size: 18px;
+  word-break: break-word;
+  padding: 10px 20px;
+}
+
+.note-list__delete-note {
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .note-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .note-list__note {
+    margin: 5px 5px;
+    width: 20%;
+  }
+
+  .note-list__header {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .note-list__body {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .note-list__delete-note {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .note-list__note {
+    width: 30%;
+  }
+}

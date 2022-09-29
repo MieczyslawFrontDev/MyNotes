@@ -1,0 +1,42 @@
+.menu__buttons {
+  display: flex;
+}
+
+.menu button,
+.note-panel button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu button:hover,
+.note-panel button:hover {
+  background-color: #333;
+  color: #ddd;
+}
+
+.menu__add {
+  margin-right: 20px;
+}
+
+.note-panel__save {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .menu button,
+  .note-panel button {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .menu button,
+  .note-panel button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+} ;
